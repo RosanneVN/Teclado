@@ -1,0 +1,90 @@
+main{
+    display: flex;
+    margin: auto;
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.board{
+display: flex;
+flex-direction: row;
+height: 70vh;
+width: 60%;
+background-color: black;
+padding: 15px 0 0 20px;
+border-radius: 8px;
+
+}
+.content{
+    width: 95%;
+}
+.screen{
+height: 30vh;
+background-color: whitesmoke;
+border-radius: 10px;
+
+}
+
+.button{
+    display: flex;
+    max-width: 70px;
+    width: 70px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button-content{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.color-button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+}
+
+.color-button.rose-button{
+    background-color:rosybrown ;
+    border: 1px solid black; 
+}
+
+.color-button.grey-button{
+    background-color:rgb(54, 48, 48) ;
+    border: 1px solid white;
+}
+
+.color-button.blue-button{
+    background-color:rgb(93, 93, 150) ;
+    border: 1px solid white;
+}
+
+.color-button.dark-button{
+    background-color:black ;
+    border: 1px solid white;
+}
+
+.rose{
+    background-color: rosybrown;
+}
+
+.grey{
+    background-color: rgb(54, 48, 48);
+}
+
+.blue{
+    background-color:rgb(93, 93, 150) ;
+}
+
+.dark{
+    background-color:black ;
+}
