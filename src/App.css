@@ -79,6 +79,7 @@ border-radius: 10px;
 
 .grey{
     background-color: rgb(54, 48, 48);
+    color: rgb(230, 230, 230);
 }
 
 .blue{
@@ -87,4 +88,18 @@ border-radius: 10px;
 
 .dark{
     background-color:black ;
+    color: rgb(230, 230, 230);
+}
+
+.styleLetter{
+    border: 1px solid whitesmoke;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center   ;
+}
+
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50px)
 }
