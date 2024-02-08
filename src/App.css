@@ -76,29 +76,9 @@ border-radius: 10px;
     border: 1px solid white;
 }
 
-/*Clases agregadas a los botones de color*/
-.rose{
-    background-color: rosybrown;
-    color: black ;
-}
-
-.grey{
-    background-color: rgb(54, 48, 48);
-    color: rgb(230, 230, 230) ;
-}
-
-.blue{
-    background-color:rgb(93, 93, 150) ;
-    color: black ;
-}
-
-.dark{
-    background-color:black ;
-    color: rgb(230, 230, 230) ;
-}
-
 /*Teclas*/
 .styleLetter{
+    color: #fff;
     border: 1px solid whitesmoke;
     height: 50px;
     display: flex;
@@ -111,3 +91,45 @@ border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 50px)
 }
+
+/*Clases agregadas a los botones de color*/
+.rose {
+    background-color: rosybrown;
+    color: black ;
+}
+
+.grey {
+    background-color: rgb(54, 48, 48);
+    color: rgb(230, 230, 230) ;
+}
+
+.blue {
+    background-color:rgb(93, 93, 150) ;
+    color: black ;
+}
+
+.dark {
+    background-color:black ;
+    color: rgb(230, 230, 230) ;
+}
+
+.rose .styleLetter{
+    background-color: rosybrown;
+    color: black ;
+}
+
+.grey .styleLetter{
+    background-color: rgb(54, 48, 48);
+    color: rgb(230, 230, 230) ;
+}
+
+.blue .styleLetter{
+    background-color:rgb(93, 93, 150) ;
+    color: black ;
+}
+
+.dark .styleLetter{
+    background-color:black ;
+    color: rgb(230, 230, 230) ;
+}
+
