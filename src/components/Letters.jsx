@@ -11,6 +11,10 @@ export const Letters = () => {
     setWriten(writen + letter);
   };
 
+  const deleteClick =()=>{
+    setWriten(writen.substring(0, writen.length-1))
+  }
+
   const handleClick = () => {
     setKeyM(!keyM);
   };
@@ -23,8 +27,11 @@ export const Letters = () => {
             <button className="styleLetter" key={letter} onClick={handleClick}>
               {letter}
             </button>
-          );
-        } else {
+          )
+        }else if (letter == 'Delete') {
+         return <button className="styleLetter" key={letter} onClick={deleteClick}>{letter}</button>
+        } 
+         else {
           letter = keyM ? letter.toUpperCase() : letter;
           return (
             <button

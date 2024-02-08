@@ -26,4 +26,5 @@
     "y",
     "z",
     "CapsLk",
+    "Delete"
   ];
