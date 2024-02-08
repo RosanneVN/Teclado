@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import { Letters } from "./components/Letters";
+import { WritenProvider } from "./contex/Writing";
+import Screen from "./components/Screen";
 
 function App() {
   const [color, setColor] = useState("black");
@@ -13,8 +15,10 @@ function App() {
     <main>
       <div className={`board ${color}`}>
         <div className="content">
-          <section className="screen"></section>
+          <WritenProvider>
+          <Screen></Screen>
           <Letters></Letters>
+          </WritenProvider>
         </div>
         <div className="button">
           <div className="button-content">

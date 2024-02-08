@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { KEYS } from "../constantes";
+import { WritenContext } from "../contex/Writing";
 
 export const Letters = () => {
   const [keyM, setKeyM] = useState(false);
+
+  const { writen, setWriten } = useContext(WritenContext);
+
+  const writeClick = (letter) => {
+    setWriten(writen + letter);
+  };
 
   const handleClick = () => {
     setKeyM(!keyM);
@@ -20,7 +27,11 @@ export const Letters = () => {
         } else {
           letter = keyM ? letter.toUpperCase() : letter;
           return (
-            <button className="styleLetter" key={letter}>
+            <button
+              className="styleLetter"
+              key={letter}
+              onClick={() => writeClick(letter)}
+            >
               {letter}
             </button>
           );

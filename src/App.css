@@ -80,6 +80,7 @@ border-radius: 10px;
 .styleLetter{
     color: #fff;
     border: 1px solid whitesmoke;
+    border-radius: 5px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -89,7 +90,8 @@ border-radius: 10px;
 
 .keyboard{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 50px)
+    grid-template-columns: repeat(auto-fit, 50px);
+    gap: 3px;
 }
 
 /*Clases agregadas a los botones de color*/
