@@ -1,33 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-
-const letters = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "n",
-  "m",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-  "CapsLk",
-];
+import { Letters } from "./components/Letters";
 
 function App() {
   const [color, setColor] = useState("black");
@@ -35,20 +8,13 @@ function App() {
     setColor(newColorBoard);
   };
 
+  
   return (
     <main>
       <div className={`board ${color}`}>
         <div className="content">
           <section className="screen"></section>
-          <div className="keyboard-content">
-            <section className="keyboard">
-              {letters.map((letter) => (
-                <div className="styleLetter" key={letter}>
-                  {letter}
-                </div>
-              ))}
-            </section>
-          </div>
+          <Letters></Letters>
         </div>
         <div className="button">
           <div className="button-content">
@@ -57,7 +23,7 @@ function App() {
               onClick={() => handleClick("rose")}
             ></button>
             <button
-              className="color-button grey-button"
+              className="color-button grey-button "
               onClick={() => handleClick("grey")}
             ></button>
             <button
