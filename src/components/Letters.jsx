@@ -44,7 +44,18 @@ export const Letters = () => {
               {letter}
             </button>
           );
-        } else {
+        }  else if (letter == "Tab") {
+          return (
+            <button
+              className="styleLetter"
+              key={letter}
+              onClick={() => writeClick(" ")}
+            >
+              {letter}
+            </button>
+          );
+        }
+         {
           letter = keyM ? letter.toUpperCase() : letter;
           return (
             <button

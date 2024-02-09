@@ -27,5 +27,6 @@
     "z",
     "CapsLk",
     "Delete",
-    'Space'
+    'Space',
+    'Tab'
   ];
