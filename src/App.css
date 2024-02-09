@@ -26,8 +26,13 @@ border-radius: 8px;
 .screen{
 color: black;
 height: 30vh;
+width: 100%;
 background-color: whitesmoke;
 border-radius: 10px;
+}
+
+textarea{
+    resize: none;
 }
 
 /*Botones de color*/
