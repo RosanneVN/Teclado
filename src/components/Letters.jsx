@@ -49,7 +49,7 @@ export const Letters = () => {
             <button
               className="styleLetter"
               key={letter}
-              onClick={() => writeClick(" ")}
+              onClick={() => writeClick("    ")}
             >
               {letter}
             </button>
