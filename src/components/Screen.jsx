@@ -9,10 +9,6 @@ const Screen = () => {
       <textarea
         className="screen"
         value={writen}
-        name=""
-        id=""
-        cols="30"
-        rows="10"
       ></textarea>
     </section>
   );

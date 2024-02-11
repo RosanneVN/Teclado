@@ -3,42 +3,38 @@ import "./App.css";
 import { Letters } from "./components/Letters";
 import { WritenProvider } from "./contex/Writing";
 import Screen from "./components/Screen";
+import ColorButton from "./components/buttonsGroup/ColorButton";
 
 function App() {
   const [color, setColor] = useState("black");
-  const handleClick = (newColorBoard) => {
-    setColor(newColorBoard);
+
+
+  const [size, setSize] = useState(7);
+  const increaseClick = () => {
+    setSize(size + 5);
   };
 
-  
+  const diminishClick = () => {
+    if (size <= 7) {
+      return;
+    } else {
+      setSize(size - 5);
+    }
+  };
+
   return (
     <main>
       <div className={`board ${color}`}>
         <div className="content">
           <WritenProvider>
-          <Screen></Screen>
-          <Letters></Letters>
+            <Screen></Screen>
+            <Letters></Letters>
           </WritenProvider>
         </div>
         <div className="button">
-          <div className="button-content">
-            <button
-              className="color-button rose-button"
-              onClick={() => handleClick("rose")}
-            ></button>
-            <button
-              className="color-button grey-button "
-              onClick={() => handleClick("grey")}
-            ></button>
-            <button
-              className="color-button blue-button"
-              onClick={() => handleClick("blue")}
-            ></button>
-            <button
-              className="color-button dark-button"
-              onClick={() => handleClick("dark")}
-            ></button>
-          </div>
+          <ColorButton setColor={setColor}></ColorButton>
+
+          
         </div>
       </div>
     </main>
