@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { KEYS } from "../constantes";
-import { WritenContext } from "../contex/Writing";
+import { WritenContext } from "../context/Writing";
 
 export const Letters = () => {
   const [keyM, setKeyM] = useState(false);

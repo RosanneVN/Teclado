@@ -1,5 +1,3 @@
-
-
 const ColorButton = (setColor) => {
     const handleClick = (newColorBoard) => {
         setColor(newColorBoard);
