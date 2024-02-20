@@ -1,170 +1,186 @@
-main{
-    display: flex;
-    margin: auto;
-    max-width: 1440px;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+main {
+  display: flex;
+  margin: auto;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 /*Board*/
-.board{
-display: flex;
-flex-direction: row;
-height: 70vh;
-width: 65%;
-background-color: black;
-padding: 15px 0 0 20px;
-border-radius: 8px;
+.board {
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  width: 65%;
+  background-color: black;
+  padding: 15px 0 0 20px;
+  border-radius: 8px;
 }
 
-.content{
-    width: 95%;
+.content {
+  width: 95%;
 }
 
 /*Pantalla de escritura*/
-.screen{
-color: black;
-height: 30vh;
-width: 100%;
-background-color: whitesmoke;
-border-radius: 10px;
+.screen {
+  color: black;
+  height: 30vh;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
 }
 
-textarea{
-    resize: none;
+textarea {
+  resize: none;
 }
 
 /*Letter Size*/
-.size-12{font-size: 12px;}
-.size-14{font-size: 14px;}
-.size-16{font-size: 16px;}
-.size-18{font-size: 20px;}
-.size-20{font-size: 24px;}
-.size-22{font-size: 28px;}
-.size-24{font-size: 30px;}
-.size-26{font-size: 35px;}
-.size-28{font-size: 40px;}
-
+.size-12 {
+  font-size: 12px;
+}
+.size-14 {
+  font-size: 14px;
+}
+.size-16 {
+  font-size: 16px;
+}
+.size-18 {
+  font-size: 20px;
+}
+.size-20 {
+  font-size: 24px;
+}
+.size-22 {
+  font-size: 28px;
+}
+.size-24 {
+  font-size: 30px;
+}
+.size-26 {
+  font-size: 35px;
+}
+.size-28 {
+  font-size: 40px;
+}
 
 /*Botones de color*/
-.button{
-    display: flex;
-    flex-direction: column;
-    max-width: 70px;
-    width: 70px;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.button {
+  display: flex;
+  flex-direction: column;
+  max-width: 70px;
+  width: 70px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.button-content-color{
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-around;
-    align-items: center;
+.button-content-color {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.color-button{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: none;
+.color-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
 }
 
-.color-button.rose-button{
-    background-color:rosybrown ;
-    border: 1px solid black; 
+.color-button.rose-button {
+  background-color: rosybrown;
+  border: 1px solid black;
 }
 
-.color-button.grey-button{
-    background-color:rgb(54, 48, 48) ;
-    border: 1px solid white;
+.color-button.grey-button {
+  background-color: rgb(54, 48, 48);
+  border: 1px solid white;
 }
 
-.color-button.blue-button{
-    background-color:rgb(93, 93, 150) ;
-    border: 1px solid white;
+.color-button.blue-button {
+  background-color: rgb(93, 93, 150);
+  border: 1px solid white;
 }
 
-.color-button.dark-button{
-    background-color:black ;
-    border: 1px solid white;
+.color-button.dark-button {
+  background-color: black;
+  border: 1px solid white;
 }
 /*Botones de tamaño de letra*/
-.button-content-size{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
+.button-content-size {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
 }
 
-.button-size{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
+.button-size {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
 }
 
 /*Teclas*/
-.styleLetter{
-    color: #fff;
-    border: 1px solid whitesmoke;
-    border-radius: 5px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
+.styleLetter {
+  color: #fff;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
 
-.keyboard{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 50px);
-    gap: 3px;
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  gap: 3px;
 }
 
 /*Clases agregadas a los botones de color*/
 .rose {
-    background-color: rosybrown;
-    color: black ;
+  background-color: rosybrown;
+  color: black;
 }
 
 .grey {
-    background-color: rgb(54, 48, 48);
-    color: rgb(230, 230, 230) ;
+  background-color: rgb(54, 48, 48);
+  color: rgb(230, 230, 230);
 }
 
 .blue {
-    background-color:rgb(93, 93, 150) ;
-    color: black ;
+  background-color: rgb(93, 93, 150);
+  color: black;
 }
 
 .dark {
-    background-color:black ;
-    color: rgb(230, 230, 230) ;
+  background-color: black;
+  color: rgb(230, 230, 230);
 }
 
-.rose .styleLetter{
-    background-color: rosybrown;
-    color: black ;
+.rose .styleLetter {
+  background-color: rosybrown;
+  color: black;
 }
 
-.grey .styleLetter{
-    background-color: rgb(54, 48, 48);
-    color: rgb(230, 230, 230) ;
+.grey .styleLetter {
+  background-color: rgb(54, 48, 48);
+  color: rgb(230, 230, 230);
 }
 
-.blue .styleLetter{
-    background-color:rgb(93, 93, 150) ;
-    color: black ;
+.blue .styleLetter {
+  background-color: rgb(93, 93, 150);
+  color: black;
 }
 
-.dark .styleLetter{
-    background-color:black ;
-    color: rgb(230, 230, 230) ;
+.dark .styleLetter {
+  background-color: black;
+  color: rgb(230, 230, 230);
 }
-

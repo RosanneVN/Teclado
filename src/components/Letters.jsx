@@ -22,48 +22,48 @@ export const Letters = () => {
   return (
     <section className="keyboard">
       {KEYS.map((letter) => {
-        if (letter == "CapsLk") {
+        if (letter.name == "CapsLk") {
           return (
-            <button className="styleLetter" key={letter} onClick={handleClick}>
-              {letter}
+            <button className="styleLetter" key={letter.name} onClick={handleClick}>
+              {letter.name}
             </button>
           );
-        } else if (letter == "Delete") {
+        } else if (letter.name == "Delete") {
           return (
-            <button className="styleLetter" key={letter} onClick={deleteClick}>
-              {letter}
+            <button className="styleLetter" key={letter.name} onClick={deleteClick}>
+              {letter.name}
             </button>
           );
-        } else if (letter == "Space") {
+        } else if (letter.name == "Space") {
           return (
             <button
               className="styleLetter"
-              key={letter}
+              key={letter.name}
               onClick={() => writeClick(" ")}
             >
-              {letter}
+              {letter.name}
             </button>
           );
-        }  else if (letter == "Tab") {
+        }  else if (letter.name == "Tab") {
           return (
             <button
               className="styleLetter"
-              key={letter}
+              key={letter.name}
               onClick={() => writeClick("    ")}
             >
-              {letter}
+              {letter.name}
             </button>
           );
         }
          {
-          letter = keyM ? letter.toUpperCase() : letter;
+          letter.name = keyM ? letter.name.toUpperCase() : letter.name;
           return (
             <button
               className="styleLetter"
-              key={letter}
-              onClick={() => writeClick(letter)}
+              key={letter.name}
+              onClick={() => writeClick(letter.name)}
             >
-              {letter}
+              {letter.name}
             </button>
           );
         }
