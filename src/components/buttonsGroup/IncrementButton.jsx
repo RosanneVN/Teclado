@@ -1,11 +1,16 @@
 import { useContext } from "react";
 import { SizingContext } from "../../context/Sizing";
- 
+
 const IncrementButton = () => {
   const { size, setSize } = useContext(SizingContext);
   console.log(size);
   const increaseClick = () => {
-    setSize(size + 2);
+    if (size >= 28) {
+      return;
+    } else{
+      setSize(size + 2);
+    }
+    
   };
 
   const diminishClick = () => {
