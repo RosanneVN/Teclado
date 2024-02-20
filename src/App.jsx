@@ -13,18 +13,19 @@ function App() {
   return (
     <main>
       <div className={`board ${color}`}>
-        <div className="content">
-          <SizingProvider>
+        <SizingProvider>
+          <div className="content">
             <WritenProvider>
               <Screen></Screen>
               <Letters></Letters>
             </WritenProvider>
+            </div>
             <div className="button">
               <ColorButton setColor={setColor}></ColorButton>
               <IncrementButton></IncrementButton>
             </div>
-          </SizingProvider>
-        </div>
+          
+        </SizingProvider>
       </div>
     </main>
   );
