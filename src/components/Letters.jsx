@@ -20,24 +20,24 @@ export const Letters = () => {
   };
 
   return (
-    <section className="keyboard">
+    <section className="keyboard-base">
       {KEYS.map((letter) => {
         if (letter.name == "CapsLk") {
           return (
-            <button className="styleLetter" key={letter.name} onClick={handleClick}>
+            <button className="key" key={letter.name} onClick={handleClick}>
               {letter.name}
             </button>
           );
         } else if (letter.name == "Delete") {
           return (
-            <button className="styleLetter" key={letter.name} onClick={deleteClick}>
+            <button className="key" key={letter.name} onClick={deleteClick}>
               {letter.name}
             </button>
           );
         } else if (letter.name == "Space") {
           return (
             <button
-              className="styleLetter"
+              className="key"
               key={letter.name}
               onClick={() => writeClick(" ")}
             >
@@ -47,7 +47,7 @@ export const Letters = () => {
         }  else if (letter.name == "Tab") {
           return (
             <button
-              className="styleLetter"
+              className="key"
               key={letter.name}
               onClick={() => writeClick("    ")}
             >
@@ -59,7 +59,7 @@ export const Letters = () => {
           letter.name = keyM ? letter.name.toUpperCase() : letter.name;
           return (
             <button
-              className="styleLetter"
+              className="key"
               key={letter.name}
               onClick={() => writeClick(letter.name)}
             >

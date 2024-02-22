@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import "./Keyboard.css";
 import { Letters } from "./components/Letters";
 import { WritenProvider } from "./context/Writing";
 import Screen from "./components/Screen";
@@ -19,12 +20,11 @@ function App() {
               <Screen></Screen>
               <Letters></Letters>
             </WritenProvider>
-            </div>
-            <div className="button">
-              <ColorButton setColor={setColor}></ColorButton>
-              <IncrementButton></IncrementButton>
-            </div>
-          
+          </div>
+          <div className="button">
+            <ColorButton setColor={setColor}></ColorButton>
+            <IncrementButton></IncrementButton>
+          </div>
         </SizingProvider>
       </div>
     </main>
