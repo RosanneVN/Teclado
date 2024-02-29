@@ -110,7 +110,7 @@ export const Letters = () => {
             <button
               className="key backslash"
               key={letter.name}
-              onClick={() => writeClick("    ")}
+              onClick={() => writeClick("/")}
             >
               {letter.name}
             </button>
