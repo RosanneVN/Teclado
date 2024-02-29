@@ -27,7 +27,7 @@ main {
   height: 30vh;
   width: 100%;
   background-color: whitesmoke;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 textarea {

@@ -9,7 +9,7 @@
 .key {
   background-color: rgb(243, 243, 243);
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   grid-column: span 2;
   font-size: 20px;
   text-align: center;

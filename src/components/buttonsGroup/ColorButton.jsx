@@ -1,5 +1,6 @@
 
-const ColorButton = (setColor) => {
+// eslint-disable-next-line react/prop-types
+const ColorButton = ({setColor}) => {
     
   const handleClick = (newColorBoard) => {
         setColor(newColorBoard);

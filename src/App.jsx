@@ -13,8 +13,8 @@ function App() {
 
   return (
     <main>
-      <div className={`board ${color}`}>
         <SizingProvider>
+      <div className={`board ${color}`}>
           <div className="content">
             <WritenProvider>
               <Screen></Screen>
@@ -25,8 +25,8 @@ function App() {
             <ColorButton setColor={setColor}></ColorButton>
             <IncrementButton></IncrementButton>
           </div>
-        </SizingProvider>
       </div>
+        </SizingProvider>
     </main>
   );
 }
